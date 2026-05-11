@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Digikala",
+    "search_url": "https://www.digikala.com/search/?q={query}",
+    "price_min": 1000000,
+    "price_max": 200000000
+  },
+  {
+    "name": "Snapp Shop",
+    "search_url": "https://snappshop.ir/search?q={query}",
+    "price_min": 1000000,
+    "price_max": 200000000
+  },
+  {
+    "name": "Almas Shop",
+    "search_url": "https://almasshopp.ir/?s={query}&post_type=product",
+    "price_min": 1000000,
+    "price_max": 200000000
+  }
+]
