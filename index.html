@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ردیاب قیمت گوشی - نسخه کاری</title>
+    <title>ردیاب قیمت گوشی - نسخه API</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
@@ -94,6 +94,7 @@
         .status.success { color: #27ae60; font-weight: bold; }
         .status.warning { color: #f39c12; font-weight: bold; }
         .status.error { color: #e74c3c; font-weight: bold; }
+        .source { font-size: 0.9em; color: #7f8c8d; }
         .update-info { 
             text-align: center; 
             padding: 20px; 
@@ -109,7 +110,16 @@
         }
         .message.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
         .message.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-        .vpn-info {
+        .api-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #bee5eb;
+        }
+        .mock-info {
             background: #fff3cd;
             color: #856404;
             padding: 15px;
@@ -117,14 +127,6 @@
             border-radius: 8px;
             text-align: center;
             border: 1px solid #ffeaa7;
-        }
-        .error-info {
-            background: #f8d7da;
-            color: #721c24;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            font-size: 0.9em;
         }
         @media (max-width: 768px) {
             .container { margin: 10px; }
@@ -139,12 +141,16 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📱 ردیاب قیمت گوشی - نسخه کاری</h1>
-            <p>آخرین آپدیت: 2026-05-11 14:39:16</p>
+            <h1>📱 ردیاب قیمت گوشی - نسخه API</h1>
+            <p>آخرین آپدیت: 2026-05-11 14:58:21</p>
         </div>
         
-        <div class="vpn-info">
-            ⚠️ اگر سایت برای شما فیلتر است، از VPN استفاده کنید. این سایت روی GitHub Pages میزبانی می‌شود.
+        <div class="mock-info">
+            🧪 این نسخه از قیمت‌های شبیه‌سازی شده برای تست استفاده می‌کند. قیمت‌ها واقعی نیستند!
+        </div>
+        
+        <div class="api-info">
+            📡 در نسخه نهایی از API‌های واقعی و سایت‌های جایگزین استفاده خواهد شد.
         </div>
         
         <div class="add-phone-section">
@@ -165,7 +171,7 @@
                 <div class="stat-label">مجموع بررسی‌ها</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">0</div>
+                <div class="stat-number">9</div>
                 <div class="stat-label">قیمت‌های پیدا شده</div>
             </div>
             <div class="stat-card">
@@ -183,89 +189,99 @@
                     <th>لینک محصول</th>
                     <th>زمان بررسی</th>
                     <th>وضعیت</th>
+                    <th>منبع</th>
                 </tr>
             </thead>
             <tbody>
                 
         <tr>
-            <td>iPhone 13 128GB</td>
-            <td class="price">—</td>
-            <td>Digikala</td>
-            <td><a href="https://www.digikala.com/search/?q=iPhone+13+128GB" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:37:33</td>
-            <td class="status error">🚫 دسترسی مسدود</td>
-        </tr>
-        
-        <tr>
-            <td>iPhone 13 128GB</td>
-            <td class="price">—</td>
-            <td>Snapp Shop</td>
-            <td><a href="https://snappshop.ir/search?q=iPhone+13+128GB" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:37:37</td>
-            <td class="status error">🚫 دسترسی مسدود</td>
-        </tr>
-        
-        <tr>
-            <td>iPhone 13 128GB</td>
-            <td class="price">—</td>
-            <td>Almas Shop</td>
-            <td><a href="https://almasshopp.ir/?s=iPhone+13+128GB&post_type=product" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:37:42</td>
-            <td class="status error">⏰ timeout</td>
-        </tr>
-        
-        <tr>
-            <td>Samsung Galaxy A55 256GB</td>
-            <td class="price">—</td>
-            <td>Digikala</td>
-            <td><a href="https://www.digikala.com/search/?q=Samsung+Galaxy+A55+256GB" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:38:08</td>
-            <td class="status error">🚫 دسترسی مسدود</td>
-        </tr>
-        
-        <tr>
-            <td>Samsung Galaxy A55 256GB</td>
-            <td class="price">—</td>
-            <td>Snapp Shop</td>
-            <td><a href="https://snappshop.ir/search?q=Samsung+Galaxy+A55+256GB" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:38:10</td>
-            <td class="status error">🚫 دسترسی مسدود</td>
-        </tr>
-        
-        <tr>
-            <td>Samsung Galaxy A55 256GB</td>
-            <td class="price">—</td>
-            <td>Almas Shop</td>
-            <td><a href="https://almasshopp.ir/?s=Samsung+Galaxy+A55+256GB&post_type=product" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:38:15</td>
-            <td class="status error">⏰ timeout</td>
-        </tr>
-        
-        <tr>
             <td>Xiaomi Redmi Note 13 Pro 256GB</td>
-            <td class="price">—</td>
-            <td>Digikala</td>
-            <td><a href="https://www.digikala.com/search/?q=Xiaomi+Redmi+Note+13+Pro+256GB" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:38:41</td>
-            <td class="status error">🚫 دسترسی مسدود</td>
-        </tr>
-        
-        <tr>
-            <td>Xiaomi Redmi Note 13 Pro 256GB</td>
-            <td class="price">—</td>
+            <td class="price">12,500,000 تومان</td>
             <td>Snapp Shop</td>
             <td><a href="https://snappshop.ir/search?q=Xiaomi+Redmi+Note+13+Pro+256GB" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:38:45</td>
-            <td class="status error">🚫 دسترسی مسدود</td>
+            <td>2026-05-11 14:58:17</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
         </tr>
         
         <tr>
             <td>Xiaomi Redmi Note 13 Pro 256GB</td>
-            <td class="price">—</td>
+            <td class="price">12,800,000 تومان</td>
+            <td>Digikala</td>
+            <td><a href="https://www.digikala.com/search/?q=Xiaomi+Redmi+Note+13+Pro+256GB" target="_blank">مشاهده</a></td>
+            <td>2026-05-11 14:58:15</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
+        </tr>
+        
+        <tr>
+            <td>Xiaomi Redmi Note 13 Pro 256GB</td>
+            <td class="price">13,200,000 تومان</td>
             <td>Almas Shop</td>
             <td><a href="https://almasshopp.ir/?s=Xiaomi+Redmi+Note+13+Pro+256GB&post_type=product" target="_blank">مشاهده</a></td>
-            <td>2026-05-11 14:38:51</td>
-            <td class="status error">⏰ timeout</td>
+            <td>2026-05-11 14:58:19</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
+        </tr>
+        
+        <tr>
+            <td>Samsung Galaxy A55 256GB</td>
+            <td class="price">18,200,000 تومان</td>
+            <td>Snapp Shop</td>
+            <td><a href="https://snappshop.ir/search?q=Samsung+Galaxy+A55+256GB" target="_blank">مشاهده</a></td>
+            <td>2026-05-11 14:58:11</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
+        </tr>
+        
+        <tr>
+            <td>Samsung Galaxy A55 256GB</td>
+            <td class="price">18,500,000 تومان</td>
+            <td>Digikala</td>
+            <td><a href="https://www.digikala.com/search/?q=Samsung+Galaxy+A55+256GB" target="_blank">مشاهده</a></td>
+            <td>2026-05-11 14:58:10</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
+        </tr>
+        
+        <tr>
+            <td>Samsung Galaxy A55 256GB</td>
+            <td class="price">19,100,000 تومان</td>
+            <td>Almas Shop</td>
+            <td><a href="https://almasshopp.ir/?s=Samsung+Galaxy+A55+256GB&post_type=product" target="_blank">مشاهده</a></td>
+            <td>2026-05-11 14:58:13</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
+        </tr>
+        
+        <tr>
+            <td>iPhone 13 128GB</td>
+            <td class="price">44,500,000 تومان</td>
+            <td>Snapp Shop</td>
+            <td><a href="https://snappshop.ir/search?q=iPhone+13+128GB" target="_blank">مشاهده</a></td>
+            <td>2026-05-11 14:58:06</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
+        </tr>
+        
+        <tr>
+            <td>iPhone 13 128GB</td>
+            <td class="price">45,000,000 تومان</td>
+            <td>Digikala</td>
+            <td><a href="https://www.digikala.com/search/?q=iPhone+13+128GB" target="_blank">مشاهده</a></td>
+            <td>2026-05-11 14:58:04</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
+        </tr>
+        
+        <tr>
+            <td>iPhone 13 128GB</td>
+            <td class="price">46,200,000 تومان</td>
+            <td>Almas Shop</td>
+            <td><a href="https://almasshopp.ir/?s=iPhone+13+128GB&post_type=product" target="_blank">مشاهده</a></td>
+            <td>2026-05-11 14:58:08</td>
+            <td class="status success">✅ پیدا شد</td>
+            <td>🧪 شبیه‌سازی</td>
         </tr>
         
             </tbody>
@@ -274,9 +290,6 @@
         <div class="update-info">
             <p>🔄 هر 10 دقیقه به‌صورت خودکار آپدیت می‌شود</p>
             <p>🌐 میزبانی شده روی GitHub Pages - بدون نیاز به سرور شخصی</p>
-            <div class="error-info">
-                💡 اگر وضعیت "🚫 دسترسی مسدود" دیدید، یعنی سایت IP ایرانی رو بلاک کرده
-            </div>
         </div>
     </div>
     
